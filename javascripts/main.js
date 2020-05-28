@@ -1,13 +1,8 @@
 import utils from './helpers/utils.js'
-
-
-const testingTesting = () => {
-  let domString = '<h3>Bears</h3>';
-  utils.printToDom('#bears', domString);
-}
+import form from './components/bearForm.js'
 
 const init = () => {
- testingTesting();
+ form.makeForm();
 }
 
 init();

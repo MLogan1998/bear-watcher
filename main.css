@@ -1,5 +1,5 @@
 body {
-  background-color: dodgerblue;
+  background-color: #627d62;
 }
 
 .bearForm {
@@ -15,4 +15,20 @@ body {
 
 label {
   margin: 0px;
+}
+
+#riverContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/images/river.jpg");
+  width: 900px;
+  max-width: 90%;
+  height: 577px;
+  margin: 10px auto;
+}
+
+#bearContainer {
+  width: 90%;
+  height: 20%;
 }

@@ -1,4 +1,5 @@
 import utils from '../helpers/utils.js'
+import river from './river.js'
 
 const makeForm = () => {
   let domString = `
@@ -42,6 +43,7 @@ const makeForm = () => {
         </form>`;
 
 utils.printToDom('#form', domString);
+document.querySelector('.btn').addEventListener('click', river.bearObj)
 }
 
 export default { makeForm }

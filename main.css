@@ -1,3 +1,18 @@
 body {
   background-color: dodgerblue;
 }
+
+.bearForm {
+  max-width: 90%;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.bearInputs {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+label {
+  margin: 0px;
+}

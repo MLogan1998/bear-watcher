@@ -29,6 +29,20 @@ label {
 }
 
 #bearContainer {
+  display: flex;
+  flex-wrap: wrap;
   width: 90%;
   height: 20%;
+}
+
+.oneBear {
+  text-align: center;
+  margin-right: 35px;
+}
+
+.displayName {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0px 6px;
+  color: white;
+  font-weight: bold;
 }

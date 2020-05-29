@@ -1,4 +1,5 @@
 import utils from '../../helpers/utils.js'
+import river from '../../components/river.js'
 
 const bearData = [];
 
@@ -28,7 +29,11 @@ const bearObj = (e) => {
   newBear.name = document.querySelector('#bearName').value;
   newBear.icon = bearIcon();
   bearData.push(newBear);
-  console.log(newBear);
+  river.bearInRiver()
+  // console.log(newBear);
 }
 
-export default { bearObj };
+const getBears = () => {
+  return bearData;
+}
+export default { bearObj, getBears };

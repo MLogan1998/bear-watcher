@@ -1,5 +1,5 @@
 import utils from '../helpers/utils.js'
-import river from './river.js'
+import data from '../helpers/data/bearData.js'
 
 const makeForm = () => {
   let domString = `
@@ -43,7 +43,7 @@ const makeForm = () => {
         </form>`;
 
 utils.printToDom('#form', domString);
-document.querySelector('.btn').addEventListener('click', river.bearObj)
+document.querySelector('.btn').addEventListener('click', data.bearObj)
 }
 
 export default { makeForm }

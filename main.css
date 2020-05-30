@@ -46,3 +46,11 @@ label {
   color: white;
   font-weight: bold;
 }
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  max-width: 90%;
+  margin: 10px auto;
+}

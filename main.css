@@ -58,10 +58,27 @@ label {
 
 .bearCard {
   margin:5px;
+  border: 6px solid #a4b65c;
 }
 
 .bearCardImg {
   max-height: 150px;
+}
+
+.card-header {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #627d62;
+}
+
+.card-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #627d62;
+}
+
+.cardDetail {
+  color:black;
 }
 
 .pleaseCatch {

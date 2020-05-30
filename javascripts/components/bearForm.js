@@ -3,14 +3,15 @@ import data from '../helpers/data/bearData.js'
 
 const makeForm = () => {
   let domString = `
-        <form class="bearInputs">
+        <form class="bearInputs" id="bearSubmit">
         <div class="form-group mb-2">
         <label for="bearName" class="pt-2">Bear Name:</label>
-        <input type="text" class="form-control" id="bearName" placeholder="Name Your Bear">
+        <input type="text" class="form-control" id="bearName" placeholder="Name Your Bear" required>
+        </input>
         </div>
         <div class="form-group mb-2">
         <label for="bearImage">Bear Image URL:</label>
-        <input type="text" class="form-control" id="bearImage" placeholder="Image URL">
+        <input type="text" class="form-control" id="bearImage" placeholder="Image URL" required>
         </div>
         <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="bearType" id="grizzlyBear" value="option1" checked>
@@ -43,7 +44,7 @@ const makeForm = () => {
         </form>`;
 
 utils.printToDom('#form', domString);
-document.querySelector('.btn').addEventListener('click', data.bearObj)
+$('#bearSubmit').on('submit', data.bearObj)
 }
 
 export default { makeForm }

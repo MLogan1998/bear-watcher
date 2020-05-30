@@ -28,9 +28,11 @@ const bearObj = (e) => {
   newBear.img = document.querySelector('#bearImage').value;
   newBear.name = document.querySelector('#bearName').value;
   newBear.icon = bearIcon();
+  newBear.fishCaught = 0;
   bearData.push(newBear);
   river.bearInRiver()
-  // console.log(newBear);
+  document.getElementById("bearName").value='';
+  document.getElementById("bearImage").value='';
 }
 
 const getBears = () => {

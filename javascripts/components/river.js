@@ -65,13 +65,13 @@ const bearInRiver = () => {
     domString += `<div class="oneBear">
                   <input type="image" class="showMore" id="${singleBear.id}" src="${singleBear.icon}" />
                   <p class="displayName mb-1">${singleBear.name}</p>
-                  <button id="${singleBear.id}" class="m-auto btn-warning fishin"><i class="fas fa-fish"></i></button>
+                  <span class="pleaseCatch" style="color: orange;"><i id="${singleBear.id}" class="fas fa-fish fa-lg"></i></span>
                   </div>`
   }
   utils.printToDom('#bearContainer', domString)
   const buttons = document.querySelectorAll('.showMore');
   for(let i = 0; i < buttons.length; i++)buttons[i].addEventListener('click', displayCard);
-  const goneFishin = document.querySelectorAll('.fishin');
+  const goneFishin = document.querySelectorAll('.pleaseCatch');
   for(let i = 0; i < goneFishin.length; i++)goneFishin[i].addEventListener('click', catchFish);
 };
 

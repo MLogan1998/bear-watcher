@@ -64,10 +64,6 @@ label {
   max-height: 150px;
 }
 
-.clickFish {
+.pleaseCatch {
   cursor: pointer;
-}
-
-.fas {
-  pointer-events: none;
 }

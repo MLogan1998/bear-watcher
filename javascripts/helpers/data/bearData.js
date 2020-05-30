@@ -24,6 +24,7 @@ const bearIcon = () => {
 const bearObj = (e) => {
   e.preventDefault();
   let newBear = {};
+  newBear.tracking = Date();
   newBear.id = 'id' + Date.now();
   newBear.img = document.querySelector('#bearImage').value;
   newBear.name = document.querySelector('#bearName').value;
@@ -33,6 +34,7 @@ const bearObj = (e) => {
   river.bearInRiver()
   document.getElementById("bearName").value='';
   document.getElementById("bearImage").value='';
+  console.log(newBear)
 }
 
 const getBears = () => {

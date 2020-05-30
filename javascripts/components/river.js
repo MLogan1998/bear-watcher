@@ -21,10 +21,11 @@ const buildABear = (obj) => {
     domString += `
       <div class="card ${obj[i].id} bearCard" style="width: 18rem;">
       <img src="${obj[i].img}" class="card-img-top bearCardImg" alt="...">
+      <h5 class="card-header">${obj[i].name}</h5>
       <div class="card-body">
-      <h5 class="card-title">${obj[i].name}</h5>
-      <p class="card-text">Fish Eaten: ${obj[i].fishCaught}</p>
-      <button type="button" id="${obj[i].id}" class="btn btn-outline-dark closeCards">Close</button>
+      <p class="card-text">Fish Eaten: <span class="cardDetail">${obj[i].fishCaught}</span></p>
+      <p class="card-text">Tracking Since: <span class="cardDetail">${obj[i].tracking}</span></p>
+      <button type="button" id="${obj[i].id}" class="btn btn-outline-danger closeCards">Close</button>
       </div>
       </div>
       `

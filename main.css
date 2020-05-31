@@ -35,6 +35,16 @@ label {
   height: 20%;
 }
 
+.submitButton {
+  background-color: #a4b65c;
+  border: 1px solid #a4b65c;
+}
+
+.submitButton:hover {
+  background-color: #a4b65c;
+  border: 1px solid #a4b65c;
+}
+
 .oneBear {
   text-align: center;
   margin-right: 35px;
@@ -83,4 +93,47 @@ label {
 
 .pleaseCatch {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  #riverContainer {
+    background-image: url("assets/images/tabletriver1.jpg");
+    width: 690px;
+    max-width: 90%; 
+    height: 443px;
+   }
+   
+   #bearContainer {
+    width: 90%;
+    height: 37%;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #riverContainer {
+    background-image: url("assets/images/mobileriver.jpg");
+    width: 337px;
+    max-width: 90%; 
+    height: 215px;
+    }
+    
+  #bearContainer {
+    width: 90%;
+    height: 75%;
+  }
+
+  .form-check-label {
+    font-size: 10px;
+  }
+  .bearCard {
+    margin:5px;
+    border: 6px solid #a4b65c;
+    max-width: 150px;
+  }
+
+  .trackingDiv {
+    display: none;
+  }
+
 }

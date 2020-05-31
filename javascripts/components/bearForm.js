@@ -39,7 +39,7 @@ const makeForm = () => {
         </div>
         </div>
         <div>
-        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        <button type="submit" class="btn btn-outline-light mt-2 submitButton">Submit</button>
         </div>
         </form>`;
 

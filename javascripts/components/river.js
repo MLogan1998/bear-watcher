@@ -24,7 +24,7 @@ const buildABear = (obj) => {
       <h5 class="card-header">${obj[i].name}</h5>
       <div class="card-body">
       <p class="card-text">Fish Eaten: <span class="cardDetail">${obj[i].fishCaught}</span></p>
-      <p class="card-text">Tracking Since: <span class="cardDetail">${obj[i].tracking}</span></p>
+      <div class="trackingDiv"><p class="card-text mb-4">Tracking Since: <span class="cardDetail">${obj[i].tracking}</span></p></div>
       <button type="button" id="${obj[i].id}" class="btn btn-outline-danger closeCards">Close</button>
       </div>
       </div>

@@ -23,4 +23,4 @@ The objective of the exercise was to create a Bear Watcher that took input from 
 
 
 ## How To Run:
-> Project is deployed at [https://logandevelopment.io/projects/sortinghat.html](https://logandevelopment.io/projects/sortinghat.html)
+> Project is deployed at [https://logandevelopment.io/projects/bear-watcher/index.html](https://logandevelopment.io/projects/bear-watcher/index.html)

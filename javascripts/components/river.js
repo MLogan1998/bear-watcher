@@ -45,7 +45,9 @@ const displayCard = (e) => {
       newBears.push(bearCard[i]);
     }
   }
- buildABear(newBears)
+  // let id = [...new Set(newBears.map(a => a.id))];
+  // buildABear(id);
+  buildABear(newBears);
 }
 
 const catchFish = (e) => {

@@ -34,10 +34,10 @@ const bearObj = (e) => {
   river.bearInRiver()
   document.getElementById("bearName").value='';
   document.getElementById("bearImage").value='';
-  console.log(newBear)
 }
 
 const getBears = () => {
   return bearData;
 }
+
 export default { bearObj, getBears };

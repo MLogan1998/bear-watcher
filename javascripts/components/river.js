@@ -1,19 +1,17 @@
 import utils from '../helpers/utils.js'
 import bears from '../helpers/data/bearData.js'
 
-
 const closeCard = (e) => {
   e.preventDefault();
   let tempCard = newBears;
   for (let i = 0; i < newBears.length; i++) {
     if (event.target.id === newBears[i].id){
     tempCard.splice(i,1);
+    console.log('newBear after splice', newBears)
   }
 }
   buildABear(tempCard);
 }
-
-
 
 const buildABear = (obj) => {
   let domString = '';
@@ -39,14 +37,17 @@ let newBears = [];
 
 const displayCard = (e) => {
   e.preventDefault();
+
   const bearCard = bears.getBears();
+  const found = newBears.findIndex((newBear) => {
+    if (newBear.id === e.target.id) return true
+});
+
   for (let i = 0; i < bearCard.length; i++) {
-    if (event.target.id === bearCard[i].id) {
+    if (found < 0 && event.target.id === bearCard[i].id) {
       newBears.push(bearCard[i]);
     }
   }
-  // let id = [...new Set(newBears.map(a => a.id))];
-  // buildABear(id);
   buildABear(newBears);
 }
 
@@ -56,10 +57,10 @@ const catchFish = (e) => {
   for (let i = 0; i < catch1.length; i++) {
     if (event.target.id === catch1[i].id) {
       catch1[i].fishCaught++;
-      console.log(catch1[i])
     }
   }
 }
+
 const bearInRiver = () => {
   const riverBears = bears.getBears()
   let domString = '';

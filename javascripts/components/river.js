@@ -37,18 +37,21 @@ let newBears = [];
 
 const displayCard = (e) => {
   e.preventDefault();
-
   const bearCard = bears.getBears();
+
+  const bearObj = bearCard.find((bearId) => {
+    return bearId.id === e.target.id
+  })
+
   const found = newBears.findIndex((newBear) => {
     if (newBear.id === e.target.id) return true
 });
 
-  for (let i = 0; i < bearCard.length; i++) {
-    if (found < 0 && event.target.id === bearCard[i].id) {
-      newBears.push(bearCard[i]);
-    }
+  const pushIt = () => {
+    if (found < 0) newBears.push(bearObj);
+    buildABear(newBears);
   }
-  buildABear(newBears);
+  pushIt();
 }
 
 const catchFish = (e) => {

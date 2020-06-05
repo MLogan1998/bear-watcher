@@ -40,4 +40,8 @@ const getBears = () => {
   return bearData;
 }
 
-export default { bearObj, getBears };
+// const testArr = bearData.find((bearId) => {
+//   return
+// })
+
+export default { bearObj, getBears, };
